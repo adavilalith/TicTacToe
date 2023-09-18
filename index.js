@@ -5,6 +5,7 @@ function place(){
     }
     if (this.textContent!=""){
         alert("full");
+        return;
     }
     this.textContent=curr_turn;
     let num=this.getAttribute("id")[4];
