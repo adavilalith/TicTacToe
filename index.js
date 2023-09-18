@@ -1,11 +1,11 @@
 function place(){
     if (game_state==false){
         alert("reset game");
-        return;
+        return null;
     }
     if (this.textContent!=""){
         alert("full");
-        return;
+        return null;
     }
     this.textContent=curr_turn;
     let num=this.getAttribute("id")[4];
