@@ -7,6 +7,7 @@ function place(){
         alert("full");
         return null;
     }
+    else{
     this.textContent=curr_turn;
     let num=this.getAttribute("id")[4];
     board[Number(num)]=curr_turn;
@@ -23,7 +24,7 @@ function place(){
     }
     
     turn_text.textContent=curr_turn+"\'s turn";
-
+    }
 }
 function reset_func(){
     cells.forEach(cell => cell.textContent="");
