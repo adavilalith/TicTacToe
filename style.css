@@ -48,6 +48,7 @@ h1{
     border-right: none;
 }
 #board{
+    zoom:150%;
     display:grid;
     grid-template-columns: repeat(3,auto);
     width:225px;
