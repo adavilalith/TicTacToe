@@ -66,10 +66,12 @@ function check_winner(){
                          [0,4,8],
                          [2,4,6]];
     var flag=true;
-    for(let i=0;i<8;i++){
+    for(let i=0;i<9;i++){
         if (board[i]==""){
             flag=false;
         }
+    }
+    for(let i=0;i<8;i++){
         if ((board[win_condition[i][0]]=="x")&&
            (board[win_condition[i][1]]=="x")&&
            (board[win_condition[i][2]]=="x")){
