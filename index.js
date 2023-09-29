@@ -48,7 +48,7 @@ function changing_board_colours(win_condition){
     
     for(let i=0;i<9;i++){
         if ((i==win_condition[0])||(i==win_condition[1])||(i==win_condition[2])){
-            cells[i].style.animation= "animation-winning 0.5s steps(6) 3";
+            cells[i].style.animation= "animation-winning 1s steps(6) 3";
         }
         else{
             cells[i].style.color="rgba(255, 255, 255, 0.5 )";
