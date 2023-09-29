@@ -12,6 +12,7 @@ function place(){
     board[Number(num)]=curr_turn;
     if(check_winner()!=""){
         if(check_winner()=="xo"){
+            changing_board_colours([9,9,9]);
             turn_text.textContent="Draw";
             game_state=false;
             return ;
