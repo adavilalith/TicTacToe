@@ -1,6 +1,6 @@
 function place(){
     if (game_state==false){
-        alert("reset game");
+        reset_func();
         return;
     }
     if (this.textContent!=""){
