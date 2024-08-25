@@ -10,6 +10,11 @@
 }
 body{
     background-image:url("res/blackboard.jpg");
+    background-size: fill;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 h1{
     text-align: center;
@@ -21,11 +26,18 @@ h1{
     
     border:2px solid;
     border-color: rgb(255, 255, 255);
-    width:100px;
-    height:100px;
+    width:70px;
+    height:50px;
     font-size:50px;
     text-align: center;
     font-family: 'chalk',fantasy;
+}
+
+#board{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    margin:auto;
+    width: 210px;   
 }
 #cell0{
     border-top: none;
@@ -55,52 +67,46 @@ h1{
     border-bottom: none;
     border-right: none;
 }
-#board{
-    zoom:150%;
-    display:grid;
-    grid-template-columns: repeat(3,auto);
-    width:225px;
-    margin:auto;
-    
-    
-}
+
 #reset{
     display: block;
     box-sizing: border-box;
     width: 7vw;
     height: 3vw;
-    margin-left: 50%;
-    margin-top:2%;
-    color: black;   
+    color: black;
+    background-color: aliceblue;
+    width:50px;
+    height: 30px;
     
 }
 #turn{
+    margin: 20px 0%;
     display: block;
-    margin-left: 50px; 
     text-align: center;
 } 
 #board>*{
     justify-content: center;
     font-size:6vw;
     color:rgb(255, 255, 255);
-
 }  
+
+
 @keyframes animation-winning {
     from{ 
-        color: rgba(255, 255, 255, 1 );
+        color: rgb(14, 232, 57);
         font-size: 6vw;
     }
     to{
-        color:rgba(255, 255, 255, 0.5);
+        color:rgba(53, 105, 70, 0.5);
     }
 }
 @keyframes animation-default {
     from{ 
-        color: rgba(255, 255, 255, 1 );
+        color: rgb(31, 195, 67);
         font-size: 6vw;
     }
     to{
-        color:rgba(255, 255, 255, 1);
+        color:rgb(56, 143, 65);
     }
 }
 #turn{
