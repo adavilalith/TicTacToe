@@ -19,7 +19,6 @@ body{
 h1{
     text-align: center;
     text-decoration: underline;
-    margin-left: 50px;
     font-family:'chalk','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .cell{
